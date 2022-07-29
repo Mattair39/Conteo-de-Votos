@@ -1,0 +1,51 @@
+Algoritmo ConteoDeVotos
+	Definir votos Como Entero
+	Definir candidato1, candidato2, candidato3, candidato4, candidato5 Como Entero
+	Escribir "Ingrese la cantidad de votos realizados"
+	Leer votos 
+	Dimension NumerodeVotos[votos]
+	Dimension porcentaje_total[5]
+	
+	Para i<-0 Hasta votos-1  Hacer
+		Escribir "Ingreso de votos"
+		Leer NumerodeVotos[i]
+	Fin Para
+	
+	Para i<-0 Hasta votos-1  Hacer
+		Si NumerodeVotos[i]=="1" Entonces
+			candidato1=candidato1+1
+			porcentaje1 = (candidato1/votos)*100
+		SiNo
+			Si NumerodeVotos[i]=="2" Entonces
+				candidato2=candidato2+1
+				porcentaje2 = (candidato2/votos)*100
+			SiNo
+				Si NumerodeVotos[i]=="3" Entonces
+					candidato3=candidato3+1
+					porcentaje3 = (candidato3/votos)*100
+				SiNo
+					Si NumerodeVotos[i]=="4" Entonces
+						candidato4=candidato4+1
+						porcentaje4 = (candidato4/votos)*100
+					SiNo
+						Si NumerodeVotos[i]=="5" Entonces
+							candidato5=candidato5+1
+							porcentaje5 = (candidato5/votos)*100
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Para
+	
+	Escribir "Porcentaje de Votos Candidato 1: ",porcentaje1," % "
+	Escribir "Numero de Votos Candidato 1: ",candidato1 " votos"
+	Escribir "Porcentaje de Votos Candidato 2: ", porcentaje2," % "
+	Escribir "Numero de Votos Candidato 2: ",candidato2 " votos"
+	Escribir "Porcentaje de Votos Candidato 3: ", porcentaje3," % "
+	Escribir "Numero de Votos Candidato 3: ", candidato3 " votos" 
+	Escribir "Porcentaje de Votos Candidato 4: ", porcentaje4," % "
+	Escribir "Numero de Votos Candidato 4: ", candidato4 " votos"
+	Escribir "Porcentaje de Votos Candidato 5: ", porcentaje5," % "
+	Escribir "Numero de Votos Candidato 5: ", candidato5 " votos"
+FinAlgoritmo
